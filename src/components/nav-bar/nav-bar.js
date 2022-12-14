@@ -11,9 +11,8 @@ const createBtn = (clazz, item, onPageSelect) => {
     );
 };
 
-const NavBar = ({onPageSelect, currentPage}) => {
-    const pages = ['Coffee house', 'Our coffee', 'For your pleasure'],
-          buttons = pages.map((item) => {
+const NavBar = ({onPageSelect, currentPage, pages}) => {
+    const buttons = pages.map((item) => {
                 const active = currentPage === item,
                     clazz = active ? 'navbar-btn-active' : '';
                                 
